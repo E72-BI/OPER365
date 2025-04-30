@@ -105,8 +105,9 @@ a.btn:visited {
 }
 
 footer {
-    margin-top: 40px;
-    color: #ccc;
+    margin-top: 20px;
+    margin-top: 20px;
+    color: #160a66;
     font-size: 14px;
 }
 
@@ -137,5 +138,37 @@ footer {
 
     footer {
         margin-top: 20;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .destaque-subtitulo {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 240px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding-bottom: 20px;
     }
 }
