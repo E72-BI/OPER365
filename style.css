@@ -142,33 +142,39 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .content h1 {
-        font-size: 30px;
-    }
-
-    .subtitle {
-        font-size: 18px;
-    }
-
-    .destaque-subtitulo {
-        font-size: 16px;
-    }
-
-    .content p {
-        font-size: 14px;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 14px;
+    .logo-container {
+        margin-top: 10px; /* Reduzindo o espaço superior da logomarca */
+        margin-bottom: 5vw; /* Espaço inferior em relação à largura da tela */
     }
 
     .logo {
-        width: 240px;
+        width: 50vw; /* Logomarca ajustando para metade da largura da tela */
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: 8vw; /* Ajusta o título para 8% da largura da tela */
+    }
+
+    .subtitle {
+        font-size: 5vw; /* Ajusta o subtítulo de forma responsiva */
+    }
+
+    .destaque-subtitulo {
+        font-size: 7vw; /* Ajusta o subtítulo de destaque */
+    }
+
+    .content p {
+        font-size: 4vw; /* Ajusta o tamanho do texto */
+    }
+
+    .btn {
+        padding: 5vw 10vw; /* Ajustando os botões para ocupar mais largura */
+        font-size: 4vw; /* Fontes de botões em proporção à tela */
     }
 
     footer {
-        font-size: 14px;
-        padding-bottom: 20px;
+        font-size: 3vw; /* Tamanho do texto no rodapé ajustado */
+        padding-bottom: 5vw; /* Ajusta o padding do rodapé */
     }
 }
