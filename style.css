@@ -14,6 +14,7 @@ body {
 .container {
     text-align: center;
     color: #fff;
+    padding: 20px;
 }
 
 .logo-container {
@@ -21,7 +22,8 @@ body {
 }
 
 .logo {
-    max-width: 180px;
+    width: 300px;
+    max-width: 90%;
 }
 
 .content {
@@ -38,13 +40,31 @@ body {
     margin-bottom: 20px;
 }
 
+.subtitle {
+    font-size: 20px;
+    color: #ff9d5c;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.destaque-subtitulo {
+    color: #ff5733;
+    font-weight: 800;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 .content p {
     font-size: 18px;
+    line-height: 1.6;
     margin-bottom: 30px;
+    color: #eee;
 }
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -58,11 +78,23 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #d84a2e;
+    background-color: #28a745;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn.disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btn:visited {
+    color: white;
+    text-decoration: none;
 }
 
 footer {
@@ -72,4 +104,32 @@ footer {
 
 footer p {
     font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .destaque-subtitulo {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 240px;
+    }
 }
