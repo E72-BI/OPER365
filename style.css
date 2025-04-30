@@ -1,11 +1,11 @@
 /* Estilo geral permanece o mesmo (mobile incluso) */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
     background: url(background.png) no-repeat center center fixed;
     background-size: cover;
@@ -19,48 +19,48 @@ body {
 }
 
 .logo-container {
-    margin-top: 10vh; /* Ajustando o espaço superior da logomarca */
-    margin-bottom: 5vw; /* Reduzindo a distância abaixo da logomarca */
+    margin-top: 30px; /* Aumentando o espaçamento da logomarca */
+    margin-bottom: 20px;
 }
 
 .logo {
-    width: 50vw; /* Logomarca ajustando para 50% da largura da tela */
-    max-width: 100%;
+    width: 300px;
+    max-width: 90%;
 }
 
 .content {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 5vw 4vw; /* Ajustando padding relativo à tela */
-    margin: 0 auto;
+    padding: 40px 20px;
+    margin: 40px auto;
     max-width: 900px;
     border-radius: 10px;
 }
 
 .content h1 {
-    font-size: 8vw; /* Ajustando o título para 8% da largura da tela */
+    font-size: 32px;
     color: #ff5733;
-    margin-bottom: 5vw; /* Espaço abaixo do título */
+    margin-bottom: 20px;
 }
 
 .subtitle {
-    font-size: 5vw; /* Ajustando o subtítulo para 5% da largura da tela */
+    font-size: 20px;
     color: #ff9d5c;
-    margin-bottom: 5vw;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 
 .destaque-subtitulo {
     color: #ff5733;
     font-weight: 800;
-    font-size: 7vw; /* Ajuste para o subtítulo de destaque */
+    font-size: 30px;
     display: inline-block;
     margin-top: 5px;
 }
 
 .content p {
-    font-size: 4.5vw; /* Ajustando o tamanho do texto para 4.5% da largura da tela */
+    font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 5vw;
+    margin-bottom: 30px;
     color: #eee;
 }
 
@@ -68,12 +68,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5vw;
+    gap: 20px;
 }
 
 .btn {
-    padding: 5vw 10vw; /* Ajustando os botões para uma proporção mais fluida */
-    font-size: 4vw; /* Ajustando o tamanho do texto no botão */
+    padding: 12px 30px;
+    font-size: 16px;
     color: white;
     background-color: #ff5733;
     border: none;
@@ -105,13 +105,13 @@ a.btn:visited {
 }
 
 footer {
-    margin-top: 10vw; /* Ajuste de espaço superior para o rodapé */
-    color: #ccc;
-    font-size: 4vw; /* Ajuste de tamanho de fonte no rodapé */
-    padding-bottom: 10vw; /* Ajuste de padding inferior no rodapé */
+    margin-top: 20px;
+    margin-top: 20px;
+    color: #160a66;
+    font-size: 14px;
 }
 
-/* Ajuste exclusivo para desktop */
+/* ✅ Ajuste exclusivo para desktop */
 @media (min-width: 1024px) {
     html, body {
         height: 100vh;
@@ -141,40 +141,44 @@ footer {
     }
 }
 
-/* Ajuste específico para dispositivos móveis */
 @media (max-width: 768px) {
     .logo-container {
-        margin-top: 8vh; /* Ajuste do espaço superior da logomarca */
-        margin-bottom: 4vw; /* Menor distância entre logomarca e conteúdo */
-    }
-
-    .logo {
-        width: 50vw; /* Ajustando a logomarca para metade da largura da tela */
+        margin-top: 20px;   /* antes 30px */
+        margin-bottom: 10px; /* antes 20px */
     }
 
     .content h1 {
-        font-size: 8vw; /* Ajuste dinâmico do título */
+        font-size: 30px;
     }
 
     .subtitle {
-        font-size: 5vw; /* Ajuste do subtítulo */
+        font-size: 18px;
     }
 
     .destaque-subtitulo {
-        font-size: 6vw; /* Ajuste do subtítulo de destaque */
+        font-size: 16px;
     }
 
     .content p {
-        font-size: 4.5vw; /* Ajuste do texto */
+        font-size: 12px;
     }
 
     .btn {
-        padding: 5vw 10vw; /* Botões ajustados */
-        font-size: 4vw; /* Fontes ajustadas no botão */
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .content {
+        margin: 20px auto; /* antes 40px auto — reduz a distância vertical total */
     }
 
     footer {
-        font-size: 4vw; /* Tamanho do texto no rodapé ajustado */
-        padding-bottom: 5vw; /* Ajuste do padding no rodapé */
+        font-size: 14px;
+        margin-top: 10px; /* antes 20px — reduz a distância entre conteúdo e rodapé */
+        padding-bottom: 10px; /* antes 20px */
     }
 }
